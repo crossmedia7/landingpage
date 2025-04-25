@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danke für deine Anmeldung!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ff0050, #ff7f50);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    a.button {
+      background: white;
+      color: #ff0050;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Danke für deine Anmeldung!</h1>
+    <p>Checke jetzt dein E-Mail-Postfach für dein exklusives Freebie<br>und bleibe auf dem Laufenden mit den besten Tipps zur digitalen Vermarktung.</p>
+    <a href="Memorix_Freebie.pdf" class="button" download>📥 Freebie jetzt herunterladen</a>
+  </div>
+</body>
+</html>
