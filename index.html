@@ -23,12 +23,14 @@
     }
 
     .card {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.65);
       border-radius: 20px;
       padding: 3rem;
-      max-width: 400px;
+      max-width: 420px;
+      width: 90%;
       text-align: center;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease-out;
     }
 
     .avatar {
@@ -41,15 +43,21 @@
     }
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
     }
 
-    p {
+    .cta {
+      font-size: 1.1rem;
       margin-bottom: 1.5rem;
-      font-size: 1rem;
+      background: #ff0050;
+      padding: 0.75rem;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff0050aa;
     }
 
+    form input[type="text"],
     form input[type="email"] {
       width: 100%;
       padding: 0.75rem;
@@ -69,10 +77,16 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.3s ease;
+      box-shadow: 0 0 12px #ff0050cc;
     }
 
     form input[type="submit"]:hover {
       background-color: #e60045;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -80,8 +94,9 @@
   <div class="card">
     <img src="avatar.jpg" alt="Avatar" class="avatar" />
     <h1>Werde Teil der Community</h1>
-    <p>Trag dich ein und erhalte exklusive Tipps zur digitalen Produktvermarktung!</p>
+    <div class="cta">Sichere dir exklusive Einblicke & Tipps!</div>
     <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
+      <input type="text" name="name" placeholder="Vor- und Nachname" required />
       <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
       <input type="submit" value="Jetzt abonnieren" />
     </form>
