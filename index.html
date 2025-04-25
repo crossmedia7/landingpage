@@ -1,99 +1,94 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MEMORIX Landingpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEMORIX</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      font-family: "Arial", sans-serif;
-      height: 100%;
-    }
-
-    body {
-      background: url('Hintergrund.jpg') no-repeat center center fixed;
+      font-family: Arial, sans-serif;
+      background: url('hintergrund.jpg') no-repeat center center;
       background-size: cover;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
     .container {
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 40px 30px;
-      border-radius: 20px;
-      max-width: 420px;
-      width: 100%;
+      background: rgba(60, 60, 60, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
       text-align: center;
-      color: white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      color: #fff;
     }
 
     .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+      width: 80px;
+      height: 80px;
       object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
 
     h1 {
-      margin: 10px 0;
-      font-size: 28px;
+      margin: 10px 0 5px;
+      font-size: 24px;
     }
 
     h2 {
+      margin: 0 0 20px;
       font-size: 18px;
-      margin-bottom: 20px;
+      color: #f0f0f0;
     }
 
-    .info-box {
-      background: #f73668;
-      color: white;
-      padding: 10px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      font-size: 15px;
-    }
-
-    form input {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 8px;
-    }
-
-    .cta-button {
+    .highlight {
       background-color: #f73668;
-      color: white;
-      padding: 12px;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
       width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
       border: none;
       border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .main-button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f73668;
+      color: #fff;
       font-size: 16px;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
     }
 
-    .cta-button:hover {
-      background-color: #d52e5a;
-    }
-
-    .testimonial-section {
+    .testimonials {
       margin-top: 30px;
       text-align: left;
     }
 
     .testimonial {
-      background: #f0f0f0;
+      background: #e0e0e0;
+      color: #333;
+      padding: 15px;
+      margin-bottom: 10px;
       border-radius: 10px;
-      padding: 12px;
-      margin-bottom: 15px;
       display: flex;
       align-items: center;
-      color: #222;
     }
 
     .testimonial img {
@@ -101,62 +96,53 @@
       height: 50px;
       object-fit: cover;
       border-radius: 50%;
-      margin-right: 15px;
+      margin-right: 10px;
     }
 
     .testimonial p {
       margin: 0;
       font-size: 14px;
     }
-
-    .testimonial strong {
-      display: block;
-      margin-top: 4px;
-    }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="avatar" src="avatar.jpg" alt="Avatar">
+    <img src="avatar.jpg" alt="Avatar" class="avatar">
     <h1>MEMORIX</h1>
     <h2>Dein Start in die digitale Vermarktung</h2>
-
-    <div class="info-box">
-      Trage dich kostenlos ein und erhalte sofort dein exklusives E-Book:<br><strong>„Erfolgsfaktor Sichtbarkeit“</strong>
+    <div class="highlight">
+      Trage dich kostenlos ein und erhalte sofort dein exklusives<br><b>E-Book:<br>„Erfolgsfaktor Sichtbarkeit“</b>
     </div>
+    <input type="text" placeholder="Vor- und Nachname">
+    <input type="email" placeholder="E-Mail-Adresse">
+    <button class="main-button">Jetzt kostenlos starten</button>
 
-    <form>
-      <input type="text" placeholder="Vor- und Nachname" required />
-      <input type="email" placeholder="E-Mail-Adresse" required />
-      <button class="cta-button" type="submit">Jetzt kostenlos starten</button>
-    </form>
-
-    <div class="testimonial-section">
+    <div class="testimonials">
       <h3>Was andere sagen:</h3>
 
       <div class="testimonial">
-        <img src="Anna.jpg" alt="Anna K.">
-        <p>„Endlich Struktur für mein Online-Business. MEMORIX ist der Gamechanger!“<strong>– Anna K.</strong></p>
+        <img src="avatar1.jpg" alt="Anna">
+        <p>„Endlich Struktur für mein Online-Business. MEMORIX ist der Gamechanger!“<br><b>– Anna K.</b></p>
       </div>
 
       <div class="testimonial">
-        <img src="Lukas.jpg" alt="Lukas M.">
-        <p>„Das Gratis-E-Book allein hat mir extrem geholfen. Top Content!“<strong>– Lukas M.</strong></p>
+        <img src="avatar2.jpg" alt="Lukas">
+        <p>„Das Gratis-E-Book allein hat mir extrem geholfen. Top Content!“<br><b>– Lukas M.</b></p>
       </div>
 
       <div class="testimonial">
-        <img src="Tina.jpg" alt="Tina B.">
-        <p>„Ich war skeptisch, aber wurde echt positiv überrascht. Klare Empfehlung!“<strong>– Tina B.</strong></p>
+        <img src="avatar3.jpg" alt="Tina">
+        <p>„Ich war skeptisch, wurde aber wirklich positiv überrascht. Klare Empfehlung!“<br><b>– Tina B.</b></p>
       </div>
 
       <div class="testimonial">
-        <img src="Daniel.jpg" alt="Daniel F.">
-        <p>„So klar und hilfreich – das findet man selten kostenlos!“<strong>– Daniel F.</strong></p>
+        <img src="avatar4.jpg" alt="Daniel">
+        <p>„So klar und hilfreich – das findet man selten kostenlos!“<br><b>– Daniel F.</b></p>
       </div>
 
       <div class="testimonial">
-        <img src="Sarah.jpg" alt="Sarah L.">
-        <p>„Ich habe direkt gebookmarkt. MEMORIX gibt mir Sicherheit beim Start.“<strong>– Sarah L.</strong></p>
+        <img src="avatar5.jpg" alt="Sarah">
+        <p>„Ich habe direkt gebookmarkt. MEMORIX gibt mir Sicherheit beim Start.“<br><b>– Sarah S.</b></p>
       </div>
     </div>
   </div>
