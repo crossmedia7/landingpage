@@ -47,6 +47,7 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
+      align-items: center;
     }
 
     input[type="text"],
@@ -56,6 +57,8 @@
       border-radius: 8px;
       border: none;
       width: 100%;
+      max-width: 500px;
+      box-sizing: border-box;
     }
 
     button {
@@ -67,6 +70,8 @@
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
+      width: 100%;
+      max-width: 500px;
     }
 
     button:hover {
@@ -114,7 +119,7 @@
     <h1>Trag dich ein & starte durch!</h1>
     <p class="description">Kostenloses E-Book: Die Geheimformel für deinen digitalen Erfolg</p>
 
-    <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')" >
+    <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
       <input type="text" name="vorname" placeholder="Vorname" required />
       <input type="text" name="nachname" placeholder="Nachname" required />
       <input type="email" name="email" placeholder="E-Mail-Adresse" required />
@@ -145,6 +150,10 @@
       <div class="testimonial">
         <img src="Sophie.jpg" alt="Sophie" />
         <p>„Alles super strukturiert & motivierend!“ – Sophie W.</p>
+      </div>
+      <div class="testimonial">
+        <img src="Jonas.jpg" alt="Jonas" />
+        <p>„Ich hab’s direkt weiterempfohlen – richtig gut!“ – Jonas L.</p>
       </div>
     </div>
   </div>
