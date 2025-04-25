@@ -1,157 +1,100 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEMORIX – Digital Durchstarten</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url("Hintergrund.jpg") no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      height: 100vh;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('Hintergrund.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.7); /* halbtransparentes Schwarz */
-      border-radius: 15px;
-      margin-top: 60px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
+.container {
+  background: rgba(60, 60, 60, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
 
-    .avatar {
-      width: 120px;
-      border-radius: 50%;
-      margin: 0 auto 20px;
-      display: block;
-      border: 3px solid #fff;
-    }
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
-    h1, h2 {
-      text-align: center;
-    }
+h1 {
+  margin: 10px 0 5px;
+  color: #ffffff;
+  font-size: 24px;
+}
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+h2 {
+  margin: 0 0 20px;
+  color: #f0f0f0;
+  font-size: 18px;
+}
 
-    input[type="text"],
-    input[type="email"] {
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-    }
+.top-button {
+  background-color: #f73668;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
 
-    button {
-      padding: 12px;
-      background-color: #ff3366;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+}
 
-    .cta {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 20px;
-      background: #ff3366;
-      padding: 10px 20px;
-      border-radius: 8px;
-      display: inline-block;
-      color: white;
-    }
+.main-button {
+  background-color: #f73668;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
 
-    .testimonials {
-      margin-top: 40px;
-    }
+h3 {
+  margin-top: 30px;
+  color: #ffffff;
+}
 
-    .testimonial {
-      background-color: rgba(255, 255, 255, 0.9);
-      color: #000;
-      padding: 15px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
+.testimonial {
+  background: #e0e0e0;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+}
 
-    .testimonial img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
-    .testimonial p {
-      margin: 0;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #ccc;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
-    <h1>MEMORIX</h1>
-    <h2>Starte jetzt deine digitale Reise!</h2>
-    <p class="cta">Trage dich kostenlos ein und erhalte sofort dein exklusives E-Book „Erfolgsfaktor Sichtbarkeit“!</p>
-
-    <form action="https://buttondown.email/api/subscribers" method="post" target="_blank">
-      <input type="hidden" name="tags" value="Landingpage">
-      <input type="text" name="name" placeholder="Vor- und Nachname" required>
-      <input type="email" name="email" placeholder="E-Mail-Adresse" required>
-      <button type="submit">Jetzt kostenlos starten!</button>
-    </form>
-
-    <div class="testimonials">
-      <h2>Was andere sagen:</h2>
-
-      <div class="testimonial">
-        <img src="Anna.jpg" alt="Anna">
-        <p>„Dank MEMORIX habe ich endlich einen Fahrplan für meine digitale Marke. Mega wertvoll!“<br><strong>– Anna K.</strong></p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Lukas.jpg" alt="Lukas">
-        <p>„Ich habe mit dem Gratis-Download sofort losgelegt. Hochwertig und professionell!“<br><strong>– Lukas M.</strong></p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Sophie.jpg" alt="Sophie">
-        <p>„Die Tipps haben mir direkt geholfen, meinen Online-Auftritt zu verbessern.“<br><strong>– Sophie R.</strong></p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Daniel.jpg" alt="Daniel">
-        <p>„MEMORIX bringt auf den Punkt, was wirklich wichtig ist. Empfehlenswert!“<br><strong>– Daniel S.</strong></p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Lea.jpg" alt="Lea">
-        <p>„Ich war skeptisch – jetzt bin ich Fan. Gratis-Inhalte mit echtem Mehrwert.“<br><strong>– Lea F.</strong></p>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 MEMORIX – Digitale Produktvermarktung
-  </footer>
-</body>
-</html>
+.testimonial p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
