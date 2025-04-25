@@ -2,125 +2,89 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Crossmedia7 Newsletter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memorix | Newsletter</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #121212;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      color: #fff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #fff;
     }
 
     h1 {
-      font-size: 3rem;
-      background: linear-gradient(to right, #ff0050, #00f2ea);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pop 1s ease-out forwards;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
-      font-size: 1.2rem;
-      color: #ccc;
-      max-width: 500px;
-      text-align: center;
-      margin-bottom: 2rem;
-      animation: fadein 1.2s ease-out;
-    }
-
-    form {
-      background-color: #1e1e1e;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 0, 80, 0.2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      animation: slideup 1s ease-out;
-    }
-
-    input[type="email"] {
-      padding: 0.8rem;
+      margin-bottom: 1.5rem;
       font-size: 1rem;
+    }
+
+    form input[type="email"] {
       width: 100%;
-      max-width: 300px;
+      padding: 0.75rem;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       margin-bottom: 1rem;
-      outline: none;
-      transition: box-shadow 0.3s;
-    }
-
-    input[type="email"]:focus {
-      box-shadow: 0 0 8px #00f2ea;
-    }
-
-    input[type="submit"] {
-      background: linear-gradient(90deg, #ff0050, #00f2ea);
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
       font-size: 1rem;
-      border-radius: 6px;
+    }
+
+    form input[type="submit"] {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #ff0050;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: background 0.3s ease;
     }
 
-    input[type="submit"]:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 12px #00f2ea;
-    }
-
-    @keyframes fadein {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideup {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes pop {
-      0% { transform: scale(0.9); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      p { font-size: 1rem; }
+    form input[type="submit"]:hover {
+      background-color: #e60045;
     }
   </style>
 </head>
 <body>
-
-  <h1>Join the Movement</h1>
-  <p>Ich renne nicht mehr. Ich jage nicht mehr. Ich baue. – Abonniere jetzt den Crossmedia7 Newsletter und bleib inspiriert!</p>
-
-  <form id="newsletter-form" 
-        action="https://buttondown.email/api/emails/embed-subscribe/memorix" 
-        method="post" target="popupwindow"
-        onsubmit="return openPopup();">
-    <input type="email" name="email" id="email" placeholder="Deine E-Mail-Adresse" required />
-    <input type="submit" value="Abonnieren" />
-  </form>
-
-  <script>
-    function openPopup() {
-      const email = document.getElementById('email').value;
-      if (!email) return false;
-      window.open('https://buttondown.email/memorix', 'popupwindow');
-      return true;
-    }
-  </script>
-
+  <div class="card">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h1>Werde Teil der Community</h1>
+    <p>Trag dich ein und erhalte exklusive Tipps zur digitalen Produktvermarktung!</p>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
+      <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
+      <input type="submit" value="Jetzt abonnieren" />
+    </form>
+  </div>
 </body>
 </html>
