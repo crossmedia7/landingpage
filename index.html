@@ -1,148 +1,158 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MEMORIX</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deine Landingpage</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background: url('hintergrund.jpg') no-repeat center center;
+      background-image: url('Hintergrund.jpg');
       background-size: cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
     }
 
     .container {
-      background: rgba(60, 60, 60, 0.9);
-      padding: 30px;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 400px;
-      text-align: center;
-      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 5vh;
     }
 
     .avatar {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      margin-bottom: 15px;
+      border: 3px solid white;
+      margin: 0 auto;
+      display: block;
     }
 
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 24px;
+    h1, p {
+      text-align: center;
     }
 
-    h2 {
-      margin: 0 0 20px;
-      font-size: 18px;
-      color: #f0f0f0;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
     }
 
-    .highlight {
-      background-color: #f73668;
-      color: #fff;
-      font-size: 14px;
-      padding: 10px;
+    input, button {
+      padding: 1rem;
+      font-size: 1rem;
       border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    input[type="text"],
-    input[type="email"] {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
       border: none;
-      border-radius: 8px;
-      font-size: 14px;
+      width: 100%;
     }
 
-    .main-button {
-      width: 100%;
-      padding: 12px;
-      background-color: #f73668;
-      color: #fff;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
+    button {
+      background-color: #00cc88;
+      color: white;
       cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00b377;
     }
 
     .testimonials {
-      margin-top: 30px;
-      text-align: left;
+      margin-top: 3rem;
     }
 
     .testimonial {
-      background: #e0e0e0;
-      color: #333;
-      padding: 15px;
-      margin-bottom: 10px;
-      border-radius: 10px;
+      background: #fff;
+      color: #000;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
       display: flex;
       align-items: center;
+      gap: 1rem;
     }
 
     .testimonial img {
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      margin-right: 10px;
     }
 
-    .testimonial p {
-      margin: 0;
-      font-size: 14px;
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: #00cc88;
+      padding: 1rem;
+      border-radius: 10px;
     }
+
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
-    <h1>MEMORIX</h1>
-    <h2>Dein Start in die digitale Vermarktung</h2>
-    <div class="highlight">
-      Trage dich kostenlos ein und erhalte sofort dein exklusives<br><b>E-Book:<br>„Erfolgsfaktor Sichtbarkeit“</b>
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h1>Dein kostenloser Einstieg in digitale Produkte</h1>
+    <p>Jetzt eintragen und sofort loslegen!</p>
+
+    <div class="form-group">
+      <input type="text" placeholder="Vorname" />
+      <input type="text" placeholder="Nachname" />
+      <input type="email" placeholder="E-Mail-Adresse" />
+      <button>Jetzt kostenlos sichern</button>
     </div>
-    <input type="text" placeholder="Vor- und Nachname">
-    <input type="email" placeholder="E-Mail-Adresse">
-    <button class="main-button">Jetzt kostenlos starten</button>
+
+    <div class="cta">
+      👉 Sichere dir jetzt dein Gratis-E-Book für den Soforteinstieg!
+    </div>
 
     <div class="testimonials">
-      <h3>Was andere sagen:</h3>
-
       <div class="testimonial">
-        <img src="avatar1.jpg" alt="Anna">
-        <p>„Endlich Struktur für mein Online-Business. MEMORIX ist der Gamechanger!“<br><b>– Anna K.</b></p>
+        <img src="Anna.jpg" alt="Anna" />
+        <div>
+          <strong>Anna S.</strong><br />
+          „Mega Content, total inspirierend! Ich bin begeistert.“
+        </div>
       </div>
 
       <div class="testimonial">
-        <img src="avatar2.jpg" alt="Lukas">
-        <p>„Das Gratis-E-Book allein hat mir extrem geholfen. Top Content!“<br><b>– Lukas M.</b></p>
+        <img src="Lukas.jpg" alt="Lukas" />
+        <div>
+          <strong>Lukas M.</strong><br />
+          „Ehrlich? Besser als viele bezahlte Kurse da draußen.“
+        </div>
       </div>
 
       <div class="testimonial">
-        <img src="avatar3.jpg" alt="Tina">
-        <p>„Ich war skeptisch, wurde aber wirklich positiv überrascht. Klare Empfehlung!“<br><b>– Tina B.</b></p>
+        <img src="Mara.jpg" alt="Mara" />
+        <div>
+          <strong>Mara W.</strong><br />
+          „Super einfach erklärt – endlich weiß ich, wie’s geht!“
+        </div>
       </div>
 
       <div class="testimonial">
-        <img src="avatar4.jpg" alt="Daniel">
-        <p>„So klar und hilfreich – das findet man selten kostenlos!“<br><b>– Daniel F.</b></p>
+        <img src="Denis.jpg" alt="Denis" />
+        <div>
+          <strong>Denis B.</strong><br />
+          „Hat mir richtig weitergeholfen – danke dafür 🙏“
+        </div>
       </div>
 
       <div class="testimonial">
-        <img src="avatar5.jpg" alt="Sarah">
-        <p>„Ich habe direkt gebookmarkt. MEMORIX gibt mir Sicherheit beim Start.“<br><b>– Sarah S.</b></p>
+        <img src="Selina.jpg" alt="Selina" />
+        <div>
+          <strong>Selina K.</strong><br />
+          „Gratis – aber fühlt sich nicht so an. Profi-Level.“
+        </div>
       </div>
     </div>
   </div>
