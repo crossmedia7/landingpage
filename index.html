@@ -2,158 +2,36 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crossmedia7 | Newsletter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crossmedia7 | Dein digitaler Marketing-Boost</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
-      background-image: url('Hintergrund.jpg');
+      background: url('Hintergrund.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
     }
 
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: rgba(0, 0, 0, 0.85);
-      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
       border-radius: 20px;
-      margin-top: 60px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
     }
 
     .avatar {
       width: 120px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto 20px;
-      border: 3px solid white;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .cta {
-      background-color: #f39c12;
-      color: #000;
-      padding: 15px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    input[type="text"],
-    input[type="email"] {
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    input[type="submit"] {
-      background-color: #27ae60;
-      color: white;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #2ecc71;
-    }
-
-    .testimonials {
-      margin-top: 2rem;
-    }
-
-    .testimonial {
-      background: #333;
-      padding: 1rem;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .testimonial img {
-      width: 60px;
-      border-radius: 50%;
-      border: 2px solid white;
-    }
-
-    .testimonial p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 1rem;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
-    <h1>Trag dich ein für deinen kostenlosen digitalen Marketing-Boost!</h1>
-
-    <div class="cta">Hol dir exklusiven Zugang zu Strategien & Tools – <strong>kostenlos</strong>!</div>
-
-    <form action="https://buttondown.email/api/forms/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
-      <input type="text" name="first_name" placeholder="Vorname" required>
-      <input type="text" name="last_name" placeholder="Nachname" required>
-      <input type="email" name="email" placeholder="E-Mail-Adresse" required>
-      <input type="submit" value="Jetzt kostenlos anmelden">
-    </form>
-
-    <div class="testimonials">
-      <h2 style="text-align:center; margin-top: 2rem;">Was andere sagen:</h2>
-
-      <div class="testimonial">
-        <img src="person1.jpg" alt="Person 1">
-        <p>„Dank Crossmedia7 hat mein erstes digitales Produkt sofort Käufer gefunden – super Unterstützung!“</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="person2.jpg" alt="Person 2">
-        <p>„Ich hätte nie gedacht, dass ein kostenloser Newsletter so viel Mehrwert liefert. Hammer!“</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="person3.jpg" alt="Person 3">
-        <p>„Die Tipps waren direkt umsetzbar – hat mir echt geholfen beim Start meiner Kampagne.“</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="person4.jpg" alt="Person 4">
-        <p>„Mega Content. Ich hab mir direkt das Freebie geschnappt – das ist echtes Expertenwissen!“</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="person5.jpg" alt="Person 5">
-        <p>„Crossmedia7 hat mir gezeigt, wie man wirklich Reichweite aufbaut. Danke!“</p>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+      height: 120px;
