@@ -1,67 +1,56 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vielen Dank!</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('Hintergrund.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }
-
-    .container {
-      background-color: rgba(0, 0, 0, 0.7);
-      margin: 5% auto;
-      padding: 40px;
-      max-width: 600px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      background-color: #00cc99;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      font-size: 1.2em;
-      border-radius: 30px;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #009977;
-    }
-
-    .freebie-img {
-      width: 200px;
-      margin-bottom: 20px;
-      border-radius: 12px;
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danke für deine Anmeldung!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Danke für deine Anmeldung!</h1>
-    <p>Du bist jetzt Teil der Community 💥</p>
-    <img src="ebook-cover.jpg" alt="Freebie Cover" class="freebie-img" />
-    <p>Als Dankeschön erhältst du exklusiv mein kostenloses E-Book <strong>„7 Wege, mit digitalen Produkten durchzustarten“</strong>.</p>
-    <a class="button" href="freebie.pdf" download>📥 Jetzt Freebie herunterladen</a>
-  </div>
+    <div class="container">
+        <h1>Vielen Dank!</h1>
+        <p>Deine Anmeldung war erfolgreich. Dein Freebie wartet auf dich!</p>
+        <a href="DEIN-FREEBIE-LINK-HIER" class="button" download>📚 Jetzt Freebie herunterladen</a>
+    </div>
 </body>
 </html>
