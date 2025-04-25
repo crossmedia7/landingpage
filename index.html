@@ -1,100 +1,164 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: url('Hintergrund.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MEMORIX Landingpage</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      height: 100%;
+    }
 
-.container {
-  background: rgba(60, 60, 60, 0.9);
-  padding: 30px;
-  border-radius: 15px;
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
+    body {
+      background: url('Hintergrund.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.avatar {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
+    .container {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 40px 30px;
+      border-radius: 20px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
 
-h1 {
-  margin: 10px 0 5px;
-  color: #ffffff;
-  font-size: 24px;
-}
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
 
-h2 {
-  margin: 0 0 20px;
-  color: #f0f0f0;
-  font-size: 18px;
-}
+    h1 {
+      margin: 10px 0;
+      font-size: 28px;
+    }
 
-.top-button {
-  background-color: #f73668;
-  color: white;
-  border: none;
-  padding: 12px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100%;
-}
+    h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
 
-form input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border: none;
-  font-size: 14px;
-}
+    .info-box {
+      background: #f73668;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
 
-.main-button {
-  background-color: #f73668;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100%;
-}
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 8px;
+    }
 
-h3 {
-  margin-top: 30px;
-  color: #ffffff;
-}
+    .cta-button {
+      background-color: #f73668;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-.testimonial {
-  background: #e0e0e0;
-  margin-top: 15px;
-  padding: 15px;
-  border-radius: 10px;
-  display: flex;
-  align-items: flex-start;
-}
+    .cta-button:hover {
+      background-color: #d52e5a;
+    }
 
-.testimonial img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 10px;
-}
+    .testimonial-section {
+      margin-top: 30px;
+      text-align: left;
+    }
 
-.testimonial p {
-  margin: 0;
-  font-size: 14px;
-  color: #333;
-}
+    .testimonial {
+      background: #f0f0f0;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      color: #222;
+    }
+
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .testimonial p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="avatar" src="avatar.jpg" alt="Avatar">
+    <h1>MEMORIX</h1>
+    <h2>Dein Start in die digitale Vermarktung</h2>
+
+    <div class="info-box">
+      Trage dich kostenlos ein und erhalte sofort dein exklusives E-Book:<br><strong>„Erfolgsfaktor Sichtbarkeit“</strong>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Vor- und Nachname" required />
+      <input type="email" placeholder="E-Mail-Adresse" required />
+      <button class="cta-button" type="submit">Jetzt kostenlos starten</button>
+    </form>
+
+    <div class="testimonial-section">
+      <h3>Was andere sagen:</h3>
+
+      <div class="testimonial">
+        <img src="Anna.jpg" alt="Anna K.">
+        <p>„Endlich Struktur für mein Online-Business. MEMORIX ist der Gamechanger!“<strong>– Anna K.</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <img src="Lukas.jpg" alt="Lukas M.">
+        <p>„Das Gratis-E-Book allein hat mir extrem geholfen. Top Content!“<strong>– Lukas M.</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <img src="Tina.jpg" alt="Tina B.">
+        <p>„Ich war skeptisch, aber wurde echt positiv überrascht. Klare Empfehlung!“<strong>– Tina B.</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <img src="Daniel.jpg" alt="Daniel F.">
+        <p>„So klar und hilfreich – das findet man selten kostenlos!“<strong>– Daniel F.</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <img src="Sarah.jpg" alt="Sarah L.">
+        <p>„Ich habe direkt gebookmarkt. MEMORIX gibt mir Sicherheit beim Start.“<strong>– Sarah L.</strong></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
