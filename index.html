@@ -1,162 +1,169 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Memorix - Dein digitales Business</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      padding: 4rem 2rem 2rem 2rem;
-      background: url('hintergrund.jpg') no-repeat center center;
-      background-size: cover;
-      position: relative;
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-      z-index: 0;
-    }
-    header > * {
-      position: relative;
-      z-index: 1;
-    }
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 1.5rem;
-    }
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 1rem auto;
-      border: 3px solid #fff;
-    }
-    .form {
-      margin-top: 2rem;
-    }
-    input[type="text"],
-    input[type="email"] {
-      padding: 1rem;
-      border-radius: 8px;
-      border: none;
-      margin: 0.5rem;
-      width: 250px;
-      max-width: 90%;
-      font-size: 1rem;
-    }
-    .cta {
-      background: #fff;
-      color: #e60073;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 1.5rem;
-      font-size: 1.1rem;
-      border: none;
-      cursor: pointer;
-    }
-    .testimonials {
-      padding: 3rem 2rem;
-      background: #fff;
-      color: #222;
-    }
-    .testimonial-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .testimonial {
-      background: #f2f2f2;
-      border-radius: 12px;
-      padding: 1rem;
-      width: 260px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    }
-    .testimonial img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      background: #111;
-      padding: 2rem;
-      color: #ccc;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossmedia7 - Deine digitale Chance!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Hintergrund.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #333;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #00bfff;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #00bfff;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        form input[type="text"], form input[type="email"] {
+            padding: 15px;
+            width: 45%;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+        form button {
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #00bfff;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background-color: #009acd;
+        }
+        .call-to-action {
+            margin-top: 30px;
+            background: #00bfff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .recommendations {
+            margin-top: 50px;
+            background: #444;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        .recommendation {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: #555;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .recommendation img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .recommendation p {
+            text-align: left;
+            margin: 0;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
+    <div class="overlay">
+        <div class="container">
+            <img src="avatar.jpg" alt="Avatar" class="avatar">
+            <h1>Starte jetzt deine digitale Erfolgsreise!</h1>
+            <p>Trage dich kostenlos ein und erfahre, wie du sofort online durchstarten kannst.</p>
+            
+            <form action="danke.html" method="post">
+                <input type="text" name="vorname" placeholder="Vorname" required>
+                <input type="text" name="nachname" placeholder="Nachname" required>
+                <br>
+                <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+                <br>
+                <button type="submit">Jetzt kostenlos starten!</button>
+            </form>
 
-  <header>
-    <img src="avatar.jpg" alt="Avatar" class="avatar" />
-    <h1>🚀 Starte jetzt mit Memorix!</h1>
-    <p>Trage deinen Namen und deine E-Mail ein und sichere dir jetzt dein kostenloses Freebie für deinen erfolgreichen Start im digitalen Business.</p>
+            <div class="call-to-action">
+                💥 Kostenlos anmelden und sofort Zugang sichern! 💥
+            </div>
 
-    <div class="form">
-      <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
-        <input type="text" name="name" placeholder="Vor- und Nachname" required />
-        <input type="email" name="email" placeholder="E-Mail-Adresse" required />
-        <br/>
-        <input type="submit" value="🎁 Kostenloses Freebie sichern" class="cta" />
-      </form>
+            <div class="recommendations">
+                <h2>Das sagen begeisterte Nutzer:</h2>
+
+                <div class="recommendation">
+                    <img src="Anna.jpg" alt="Anna L.">
+                    <p><strong>Anna L.:</strong> "Durch die Plattform habe ich endlich den richtigen Weg gefunden, meine Produkte zu vermarkten. Kostenlos und super effektiv!"</p>
+                </div>
+
+                <div class="recommendation">
+                    <img src="Markus.jpg" alt="Markus B.">
+                    <p><strong>Markus B.:</strong> "Nie hätte ich gedacht, dass ich online so schnell Erfolg sehe – danke für diese geniale Möglichkeit!"</p>
+                </div>
+
+                <div class="recommendation">
+                    <img src="Sophie.jpg" alt="Sophie M.">
+                    <p><strong>Sophie M.:</strong> "Einfache Umsetzung, starke Ergebnisse. Kostenlos loslegen und sofort Wirkung spüren!"</p>
+                </div>
+
+                <div class="recommendation">
+                    <img src="Lukas.jpg" alt="Lukas K.">
+                    <p><strong>Lukas K.:</strong> "Die beste Entscheidung meines Jahres! Genial, wie leicht alles aufgesetzt ist."</p>
+                </div>
+
+                <div class="recommendation">
+                    <img src="Laura.jpg" alt="Laura S.">
+                    <p><strong>Laura S.:</strong> "Endlich ein echter Gamechanger im Netz – kostenlos testen und sofort überzeugt sein."</p>
+                </div>
+
+            </div>
+
+            <footer>
+                © 2025 Crossmedia7. Alle Rechte vorbehalten.
+            </footer>
+        </div>
     </div>
-  </header>
-
-  <section class="testimonials">
-    <h2>💬 Erfolgs-Stories aus der Community</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <img src="anna.jpg" alt="Anna L.">
-        <p><em>„Dank Memorix konnte ich mein erstes digitales Produkt innerhalb einer Woche erfolgreich launchen.“</em></p>
-        <p><strong>– Anna L.</strong></p>
-      </div>
-      <div class="testimonial">
-        <img src="markus.jpg" alt="Markus B.">
-        <p><em>„Die Marketingstrategien von Memorix haben meine Verkaufszahlen verdoppelt.“</em></p>
-        <p><strong>– Markus B.</strong></p>
-      </div>
-      <div class="testimonial">
-        <img src="sophie.jpg" alt="Sophie M.">
-        <p><em>„Ich war skeptisch, aber Memorix hat meine Erwartungen übertroffen.“</em></p>
-        <p><strong>– Sophie M.</strong></p>
-      </div>
-      <div class="testimonial">
-        <img src="lukas.jpg" alt="Lukas K.">
-        <p><em>„Mit Memorix habe ich nicht nur Zeit, sondern auch Geld gespart.“</em></p>
-        <p><strong>– Lukas K.</strong></p>
-      </div>
-      <div class="testimonial">
-        <img src="laura.jpg" alt="Laura S.">
-        <p><em>„Die Community und der Support bei Memorix sind unschlagbar.“</em></p>
-        <p><strong>– Laura S.</strong></p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Memorix. Alle Rechte vorbehalten.
-  </footer>
-
 </body>
 </html>
