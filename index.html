@@ -1,125 +1,152 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Dein kostenloser Einstieg</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('hintergrund.jpg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deine Landingpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('Hintergrund.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
 
-        .container {
-            background-color: #424242;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            width: 350px;
-            text-align: center;
-        }
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      border-radius: 12px;
+    }
 
-        .container img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
+    .avatar {
+      display: block;
+      margin: 0 auto 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
 
-        .container h1 {
-            color: white;
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
 
-        .container p {
-            color: white;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
+    p.description {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
 
-        .container input[type="text"],
-        .container input[type="email"] {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-        .container button {
-            width: 95%;
-            padding: 12px;
-            background-color: #34a853;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+    input[type="text"],
+    input[type="email"] {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      width: 100%;
+    }
 
-        .bonus-button {
-            width: 95%;
-            padding: 10px;
-            background-color: #4cd964;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
+    button {
+      background-color: #ff4747;
+      color: white;
+      font-size: 1.1rem;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-        .testimonial {
-            background-color: white;
-            color: black;
-            margin-top: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 13px;
-            text-align: left;
-        }
+    button:hover {
+      background-color: #e63c3c;
+    }
 
-        .testimonial strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-    </style>
+    .call-to-action {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+      color: #ffd700;
+      font-size: 1.1rem;
+    }
+
+    .testimonials {
+      margin-top: 40px;
+    }
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      background-color: rgba(255,255,255,0.05);
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
+    .testimonial p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h1>Trag dich ein & starte durch!</h1>
+    <p class="description">Kostenloses E-Book: Die Geheimformel für deinen digitalen Erfolg</p>
 
-<div class="container">
-    <img src="profilbild.png" alt="Profilbild">
+    <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')" >
+      <input type="text" name="vorname" placeholder="Vorname" required />
+      <input type="text" name="nachname" placeholder="Nachname" required />
+      <input type="email" name="email" placeholder="E-Mail-Adresse" required />
+      <button type="submit">Jetzt kostenlos sichern</button>
+    </form>
 
-    <h1>Dein kostenloser Einstieg in digitale Produkte</h1>
-    <p>Jetzt eintragen und sofort loslegen!</p>
-
-    <input type="text" placeholder="Vorname">
-    <input type="text" placeholder="Nachname">
-    <input type="email" placeholder="E-Mail-Adresse">
-
-    <button>Jetzt kostenlos sichern</button>
-
-    <button class="bonus-button">👉 Sichere dir jetzt dein Gratis-E-Book für den Soforteinstieg!</button>
-
-    <div class="testimonial">
-        <strong>Anna S.</strong>
-        „Mega Content, total inspirierend! Ich bin begeistert.“
+    <div class="call-to-action">
+      ➤ Starte jetzt – gratis, unverbindlich & voller Mehrwert!
     </div>
 
-    <div class="testimonial">
-        <strong>Lukas M.</strong>
-        „Ehrlich? Besser als viele bezahlte Kurse da draußen.“
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="Anna.jpg" alt="Anna" />
+        <p>„Wow! Selten so viel Klarheit in einem Freebie erlebt. Danke!“ – Anna M.</p>
+      </div>
+      <div class="testimonial">
+        <img src="Lukas.jpg" alt="Lukas" />
+        <p>„Echt hilfreich – und das kostenlos? Mega!“ – Lukas B.</p>
+      </div>
+      <div class="testimonial">
+        <img src="Maria.jpg" alt="Maria" />
+        <p>„Ich habe sofort Ideen bekommen, wie ich starten kann.“ – Maria K.</p>
+      </div>
+      <div class="testimonial">
+        <img src="Tobias.jpg" alt="Tobias" />
+        <p>„Schon das Freebie ist besser als mancher bezahlter Kurs.“ – Tobias S.</p>
+      </div>
+      <div class="testimonial">
+        <img src="Sophie.jpg" alt="Sophie" />
+        <p>„Alles super strukturiert & motivierend!“ – Sophie W.</p>
+      </div>
     </div>
-</div>
-
+  </div>
 </body>
 </html>
