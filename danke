@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="5; URL=index.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Danke für deine Anmeldung!</title>
   <style>
@@ -53,7 +54,7 @@
 <body>
   <div class="container">
     <h1>🎉 Danke für deine Anmeldung!</h1>
-    <p>Checke jetzt dein E-Mail-Postfach für dein exklusives Freebie<br>und bleibe auf dem Laufenden mit den besten Tipps zur digitalen Vermarktung.</p>
+    <p>Dein exklusives Freebie ist auf dem Weg zu dir!<br>Du wirst in wenigen Sekunden automatisch weitergeleitet.</p>
     <a href="Memorix_Freebie.pdf" class="button" download>📥 Freebie jetzt herunterladen</a>
   </div>
 </body>
