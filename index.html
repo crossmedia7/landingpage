@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dein kostenloser Einstieg</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://images.unsplash.com/photo-1506765515384-028b60a970df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            background: #4a4a4a;
-            width: 400px;
-            margin: 50px auto;
-            padding: 30px 20px;
-            border-radius: 10px;
-            text-align: center;
-            color: #fff;
-        }
-        .container img.profile {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        input[type="text"], input[type="email"] {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        button {
-            width: 95%;
-            padding: 12px;
-            background: #28a745;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 16px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #218838;
-        }
-        .ebook-button {
-            width: 95%;
-            padding: 12px;
-            background: #34d058;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 14px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-        .testimonial {
-            background: white;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-            text-align: left;
-            font-size: 14px;
-        }
-        .testimonial strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dein kostenloser Einstieg</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('hintergrund.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #444;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .profile {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 22px;
+      color: white;
+      margin-bottom: 10px;
+    }
+    p {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .btn-green {
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      margin-top: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn-green:hover {
+      background-color: #218838;
+    }
+    .testimonial {
+      background: white;
+      color: #333;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-align: left;
+      font-size: 13px;
+    }
+    .testimonial b {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <img class="profile" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profilbild">
-    <h2>Dein kostenloser Einstieg in digitale Produkte</h2>
+  <div class="container">
+    <img class="profile" src="profilbild.png" alt="Profilbild">
+    <h1>Dein kostenloser Einstieg in digitale Produkte</h1>
     <p>Jetzt eintragen und sofort loslegen!</p>
-    <form>
-        <input type="text" placeholder="Vorname" required><br>
-        <input type="text" placeholder="Nachname" required><br>
-        <input type="email" placeholder="E-Mail-Adresse" required><br>
-        <button type="submit">Jetzt kostenlos sichern</button>
-        <button type="button" class="ebook-button">👉 Sichere dir jetzt dein Gratis-E-Book für den Soforteinstieg!</button>
-    </form>
+
+    <input type="text" placeholder="Vorname">
+    <input type="text" placeholder="Nachname">
+    <input type="email" placeholder="E-Mail-Adresse">
+    
+    <button class="btn-green">Jetzt kostenlos sichern</button>
+    <button class="btn-green" style="margin-top:10px; background-color: #2ecc71;">👉 Sichere dir jetzt dein Gratis-E-Book für den Soforteinstieg!</button>
 
     <div class="testimonial">
-        <strong>Anna S.</strong>
-        „Mega Content, total inspirierend! Ich bin begeistert.“
+      <b>Anna S.</b>
+      „Mega Content, total inspirierend! Ich bin begeistert.“
     </div>
     <div class="testimonial">
-        <strong>Lukas M.</strong>
-        „Ehrlich? Besser als viele bezahlte Kurse da draußen.“
+      <b>Lukas M.</b>
+      „Ehrlich? Besser als viele bezahlte Kurse da draußen.“
     </div>
-</div>
+  </div>
 
 </body>
 </html>
