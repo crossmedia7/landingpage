@@ -48,13 +48,15 @@
     }
 
     .cta {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: 1.5rem;
-      background: #ff0050;
-      padding: 0.75rem;
-      border-radius: 10px;
+      background: linear-gradient(135deg, #ff0050, #ff7f50);
+      padding: 1rem;
+      border-radius: 12px;
       font-weight: bold;
-      box-shadow: 0 0 10px #ff0050aa;
+      box-shadow: 0 0 20px rgba(255, 0, 80, 0.6);
+      line-height: 1.5;
+      animation: pulse 2s infinite;
     }
 
     form input[type="text"],
@@ -84,9 +86,38 @@
       background-color: #e60045;
     }
 
+    .thanks {
+      display: none;
+      margin-top: 1rem;
+      color: #a0ffa0;
+      font-size: 1rem;
+    }
+
+    .social {
+      margin-top: 2rem;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .social a:hover {
+      color: #ff7f50;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px rgba(255, 0, 80, 0.6); }
+      50% { box-shadow: 0 0 25px rgba(255, 0, 80, 1); }
+      100% { box-shadow: 0 0 10px rgba(255, 0, 80, 0.6); }
     }
   </style>
 </head>
@@ -94,12 +125,33 @@
   <div class="card">
     <img src="avatar.jpg" alt="Avatar" class="avatar" />
     <h1>Werde Teil der Community</h1>
-    <div class="cta">Sichere dir exklusive Einblicke & Tipps!</div>
-    <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
+    <div class="cta">
+      ✨ Jetzt <strong>kostenlos</strong> abonnieren &<br>
+      exklusive <strong>Strategien</strong> zur digitalen<br>
+      Produktvermarktung sichern!
+    </div>
+    <form onsubmit="showThanks()" action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
       <input type="text" name="name" placeholder="Vor- und Nachname" required />
       <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
       <input type="submit" value="Jetzt abonnieren" />
     </form>
+    <div class="thanks" id="thanks">
+      🎉 Vielen Dank für deine Anmeldung! Check dein Postfach!
+    </div>
+
+    <div class="social">
+      Folge mir auf:
+      <a href="https://www.facebook.com/profile.php?id=61575031511605" target="_blank">Facebook</a> |
+      <a href="https://www.tiktok.com/@crossmedia7" target="_blank">TikTok</a>
+    </div>
   </div>
+
+  <script>
+    function showThanks() {
+      setTimeout(() => {
+        document.getElementById('thanks').style.display = 'block';
+      }, 1000);
+    }
+  </script>
 </body>
 </html>
