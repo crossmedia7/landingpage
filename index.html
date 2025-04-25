@@ -3,35 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crossmedia7 | Dein digitaler Marketing-Boost</title>
+  <title>Crossmedia7 | Digitaler Marketing-Boost</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
       font-family: Arial, sans-serif;
       background: url('Hintergrund.jpg') no-repeat center center fixed;
       background-size: cover;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.7);
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px;
-    }
-
     .container {
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 20px;
-      border-radius: 20px;
       max-width: 600px;
-      width: 100%;
+      margin: 50px auto;
+      background-color: #222;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      color: white;
       text-align: center;
     }
 
     .avatar {
       width: 120px;
       height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background-color: #f39c12;
+      color: black;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .cta-button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .section {
+      margin-top: 50px;
+    }
+
+    .testimonial {
+      background-color: #333;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .testimonial p {
+      margin: 0;
+      color: #ddd;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <img src="avatar.jpg" alt="Avatar" class="avatar">
+
+  <h1>Trag dich ein für deinen kostenlosen digitalen Marketing-Boost!</h1>
+  <div class="highlight">
+    Hol dir exklusiven Zugang zu Strategien & Tools – <strong>kostenlos!</strong>
+  </div>
+
+  <form action="danke.html" method="POST">
+    <input type="text" name="vorname" placeholder="Vorname" required>
+    <input type="text" name="nachname" placeholder="Nachname" required>
+    <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+    <button type="submit" class="cta-button">Jetzt kostenlos anmelden</button>
+  </form>
+
+  <div class="section">
+    <h2>Was andere sagen:</h2>
+
+    <div class="testimonial">
+      <img src="Anna.jpg" alt="Anna">
+      <p>„Dank Crossmedia7 habe ich endlich mein erstes digitales Produkt verkauft. Top Unterstützung!“</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="Laura.jpg" alt="Laura">
+      <p>„Ich war überrascht, wie viel Mehrwert ich sofort kostenlos erhalten habe. Hammer!“</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="Lukas.jpg" alt="Lukas">
+      <p>„Der Newsletter liefert extrem wertvolle Tipps, die mir sofort geholfen haben!“</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="Markus.jpg" alt="Markus">
+      <p>„Mega Infos! Wer hier nicht zugreift, verpasst richtig was.“</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="Sophie.jpg" alt="Sophie">
+      <p>„Klare Empfehlung – sehr authentisch und ehrlich. Vielen Dank für diese Möglichkeiten!“</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
