@@ -1,160 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deine Landingpage</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('Hintergrund.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: #fff;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein kostenloser Einstieg in digitale Produkte</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('DEIN-HINTERGRUNDBILD-URL') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
 
-    .container {
-      background-color: rgba(0, 0, 0, 0.7);
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      border-radius: 10px;
-      margin-top: 5vh;
-    }
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* leicht dunkler grauer Kasten */
+            max-width: 450px; /* SCHMÄLER gemacht */
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
 
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid white;
-      margin: 0 auto;
-      display: block;
-    }
+        input[type="text"], input[type="email"] {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
 
-    h1, p {
-      text-align: center;
-    }
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            margin: 10px 0;
+            width: 90%;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
+        .submit-button:hover {
+            background-color: #218838;
+        }
 
-    input, button {
-      padding: 1rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: none;
-      width: 100%;
-    }
+        .ebook-button {
+            background-color: #34c759;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 0;
+            width: 90%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    button {
-      background-color: #00cc88;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
+        .ebook-button:hover {
+            background-color: #28a745;
+        }
 
-    button:hover {
-      background-color: #00b377;
-    }
+        .testimonial {
+            background: white;
+            color: black;
+            margin: 15px auto;
+            padding: 10px;
+            border-radius: 8px;
+            max-width: 90%;
+            font-size: 14px;
+            text-align: left;
+        }
 
-    .testimonials {
-      margin-top: 3rem;
-    }
+        .testimonial strong {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-    .testimonial {
-      background: #fff;
-      color: #000;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .testimonial img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-      background-color: #00cc88;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-
-  </style>
+        img.profile {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar" />
-    <h1>Dein kostenloser Einstieg in digitale Produkte</h1>
-    <p>Jetzt eintragen und sofort loslegen!</p>
 
-    <div class="form-group">
-      <input type="text" placeholder="Vorname" />
-      <input type="text" placeholder="Nachname" />
-      <input type="email" placeholder="E-Mail-Adresse" />
-      <button>Jetzt kostenlos sichern</button>
+    <div class="container">
+        <img class="profile" src="DEIN-PROFILBILD-URL" alt="Profilbild">
+        <h1>Dein kostenloser Einstieg in digitale Produkte</h1>
+        <p>Jetzt eintragen und sofort loslegen!</p>
+
+        <input type="text" placeholder="Vorname">
+        <input type="text" placeholder="Nachname">
+        <input type="email" placeholder="E-Mail-Adresse">
+        <button class="submit-button">Jetzt kostenlos sichern</button>
+        <button class="ebook-button">👉 Sichere dir jetzt dein Gratis-E-Book für den Soforteinstieg!</button>
+
+        <div class="testimonial">
+            <strong>Anna S.</strong>
+            „Mega Content, total inspirierend! Ich bin begeistert.“
+        </div>
+        <div class="testimonial">
+            <strong>Lukas M.</strong>
+            „Ehrlich? Besser als viele bezahlte Kurse da draußen.“
+        </div>
     </div>
 
-    <div class="cta">
-      👉 Sichere dir jetzt dein Gratis-E-Book für den Soforteinstieg!
-    </div>
-
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="Anna.jpg" alt="Anna" />
-        <div>
-          <strong>Anna S.</strong><br />
-          „Mega Content, total inspirierend! Ich bin begeistert.“
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="Lukas.jpg" alt="Lukas" />
-        <div>
-          <strong>Lukas M.</strong><br />
-          „Ehrlich? Besser als viele bezahlte Kurse da draußen.“
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="Mara.jpg" alt="Mara" />
-        <div>
-          <strong>Mara W.</strong><br />
-          „Super einfach erklärt – endlich weiß ich, wie’s geht!“
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="Denis.jpg" alt="Denis" />
-        <div>
-          <strong>Denis B.</strong><br />
-          „Hat mir richtig weitergeholfen – danke dafür 🙏“
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="Selina.jpg" alt="Selina" />
-        <div>
-          <strong>Selina K.</strong><br />
-          „Gratis – aber fühlt sich nicht so an. Profi-Level.“
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
