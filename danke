@@ -1,61 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="5; URL=index.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danke für deine Anmeldung!</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ff0050, #ff7f50);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-
-    .container {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 3rem;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.5);
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    a.button {
-      background: white;
-      color: #ff0050;
-      padding: 0.75rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    a.button:hover {
-      background: #f0f0f0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danke für deine Anmeldung!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Hintergrund.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #333;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #00bfff;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00bfff;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .freebie {
+            background: #00bfff;
+            padding: 25px;
+            border-radius: 12px;
+            font-size: 1.5em;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #009acd;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #007ba7;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎉 Danke für deine Anmeldung!</h1>
-    <p>Dein exklusives Freebie ist auf dem Weg zu dir!<br>Du wirst in wenigen Sekunden automatisch weitergeleitet.</p>
-    <a href="Memorix_Freebie.pdf" class="button" download>📥 Freebie jetzt herunterladen</a>
-  </div>
+    <div class="overlay">
+        <div class="container">
+            <img src="avatar.jpg" alt="Avatar" class="avatar">
+            <h1>Vielen Dank für deine Anmeldung!</h1>
+            <p>Willkommen an Bord! 🎉</p>
+
+            <div class="freebie">
+                🎁 Dein kostenloses Geschenk wartet auf dich!
+            </div>
+
+            <p>Als kleines Dankeschön erhältst du unser exklusives Freebie:</p>
+
+            <p><strong>"Die 7 größten Fehler beim Start eines Online-Business – und wie du sie vermeidest!"</strong></p>
+
+            <a href="Freebie.pdf" class="button" download>📥 Jetzt kostenlos herunterladen</a>
+
+            <footer>
+                © 2025 Crossmedia7. Alle Rechte vorbehalten.
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
