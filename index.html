@@ -2,166 +2,154 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marketing-Boost Landingpage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEMORIX – Digital Durchstarten</title>
   <style>
-    /* Hintergrund */
     body {
       margin: 0;
       padding: 0;
-      background: url('Hintergrund.jpg') no-repeat center center fixed;
+      background: url("Hintergrund.jpg") no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
-      color: white;
+      color: #fff;
     }
 
-    /* Container */
     .container {
-      background: rgba(0, 0, 0, 0.7);
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      margin-top: 60px;
+    }
+
+    .avatar {
+      width: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: block;
+      border: 3px solid #fff;
+    }
+
+    h1, h2 {
       text-align: center;
     }
 
-    /* Avatar */
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid white;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
 
-    /* Headline */
-    h1 {
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-
-    /* Call to Action Banner */
-    .cta-banner {
-      background-color: #f39c12;
-      color: black;
-      padding: 10px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    /* Formular */
-    form input[type="text"],
-    form input[type="email"],
-    form button {
-      width: 100%;
+    input[type="text"],
+    input[type="email"] {
       padding: 12px;
-      margin: 8px 0;
-      border-radius: 8px;
       border: none;
-      box-sizing: border-box;
-      font-size: 14px;
+      border-radius: 8px;
+      font-size: 16px;
     }
 
-    form input[type="text"],
-    form input[type="email"] {
-      background: white;
-      color: black;
-    }
-
-    form button {
-      background-color: #27ae60;
+    button {
+      padding: 12px;
+      background-color: #ff3366;
       color: white;
-      cursor: pointer;
+      font-size: 18px;
       font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
-    form button:hover {
-      background-color: #219150;
+    .cta {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+      background: #ff3366;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      color: white;
     }
 
-    /* Testimonials */
     .testimonials {
-      margin-top: 30px;
-      text-align: left;
+      margin-top: 40px;
     }
 
     .testimonial {
-      background-color: rgba(255,255,255,0.1);
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
       padding: 15px;
       border-radius: 12px;
+      margin-bottom: 20px;
       display: flex;
+      gap: 15px;
       align-items: center;
-      margin-bottom: 15px;
     }
 
     .testimonial img {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      object-fit: cover;
-      margin-right: 15px;
-      border: 2px solid white;
     }
 
-    .testimonial-text {
+    .testimonial p {
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
       font-size: 14px;
-      color: #f0f0f0;
-    }
-
-    /* Mobile Optimierung */
-    @media (max-width: 500px) {
-      .container {
-        width: 90%;
-        margin: 20px auto;
-      }
+      color: #ccc;
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <img src="avatar.jpg" alt="Avatar" class="avatar">
-    <h1>Trag dich ein für deinen kostenlosen digitalen Marketing-Boost!</h1>
+    <h1>MEMORIX</h1>
+    <h2>Starte jetzt deine digitale Reise!</h2>
+    <p class="cta">Trage dich kostenlos ein und erhalte sofort dein exklusives E-Book „Erfolgsfaktor Sichtbarkeit“!</p>
 
-    <div class="cta-banner">
-      Hol dir exklusiven Zugang zu Strategien & Tools – <strong>kostenlos!</strong>
-    </div>
-
-    <form>
-      <input type="text" name="vorname" placeholder="Vorname" required>
-      <input type="text" name="nachname" placeholder="Nachname" required>
+    <form action="https://buttondown.email/api/subscribers" method="post" target="_blank">
+      <input type="hidden" name="tags" value="Landingpage">
+      <input type="text" name="name" placeholder="Vor- und Nachname" required>
       <input type="email" name="email" placeholder="E-Mail-Adresse" required>
-      <button type="submit">Jetzt kostenlos anmelden</button>
+      <button type="submit">Jetzt kostenlos starten!</button>
     </form>
 
     <div class="testimonials">
-      <h2 style="text-align:center;">Was andere sagen:</h2>
+      <h2>Was andere sagen:</h2>
 
       <div class="testimonial">
         <img src="Anna.jpg" alt="Anna">
-        <div class="testimonial-text">
-          „Dank Crossmedia7 habe ich endlich mein erstes digitales Produkt verkauft. Top Unterstützung!"
-        </div>
+        <p>„Dank MEMORIX habe ich endlich einen Fahrplan für meine digitale Marke. Mega wertvoll!“<br><strong>– Anna K.</strong></p>
       </div>
 
       <div class="testimonial">
         <img src="Lukas.jpg" alt="Lukas">
-        <div class="testimonial-text">
-          „Ich war überrascht, wie viel Mehrwert ich sofort kostenlos erhalten habe. Hammer!"
-        </div>
+        <p>„Ich habe mit dem Gratis-Download sofort losgelegt. Hochwertig und professionell!“<br><strong>– Lukas M.</strong></p>
       </div>
 
       <div class="testimonial">
         <img src="Sophie.jpg" alt="Sophie">
-        <div class="testimonial-text">
-          „Klare Empfehlungen und direkte Umsetzungstipps – alles gratis. Wahnsinn!"
-        </div>
+        <p>„Die Tipps haben mir direkt geholfen, meinen Online-Auftritt zu verbessern.“<br><strong>– Sophie R.</strong></p>
       </div>
 
+      <div class="testimonial">
+        <img src="Daniel.jpg" alt="Daniel">
+        <p>„MEMORIX bringt auf den Punkt, was wirklich wichtig ist. Empfehlenswert!“<br><strong>– Daniel S.</strong></p>
+      </div>
+
+      <div class="testimonial">
+        <img src="Lea.jpg" alt="Lea">
+        <p>„Ich war skeptisch – jetzt bin ich Fan. Gratis-Inhalte mit echtem Mehrwert.“<br><strong>– Lea F.</strong></p>
+      </div>
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 MEMORIX – Digitale Produktvermarktung
+  </footer>
 </body>
 </html>
