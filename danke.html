@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vielen Dank!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danke für deine Anmeldung!</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: url('Hintergrund.jpg') no-repeat center center fixed;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('Hintergrund.jpg');
       background-size: cover;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: #fff;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-position: center;
+      color: white;
     }
-    .thankyou-box {
-      background: rgba(0, 0, 0, 0.6);
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 600px;
+      margin: 5vh auto;
       padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
-      max-width: 500px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
     }
-    h1 {
-      color: #4CAF50;
+
+    .avatar {
+      width: 100px;
+      border-radius: 50%;
       margin-bottom: 20px;
     }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
     p {
-      color: #ddd;
-      font-size: 18px;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
     }
+
     .button {
-      margin-top: 20px;
-      display: inline-block;
+      background-color: #ffcc00;
+      color: black;
       padding: 15px 30px;
-      background-color: #4CAF50;
-      color: white;
       text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
+
     .button:hover {
-      background-color: #45a049;
+      background-color: #ffdd33;
     }
   </style>
 </head>
 <body>
-
-<div class="thankyou-box">
-  <h1>Vielen Dank!</h1>
-  <p>Deine Anmeldung war erfolgreich!</p>
-  <p>Hier kannst du dein Gratis-E-Book herunterladen:</p>
-  <a class="button" href="DeinEbook.pdf" download>Jetzt E-Book herunterladen</a>
-</div>
-
+  <div class="container">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
+    <h1>Danke für deine Anmeldung!</h1>
+    <p>Du bist jetzt Teil der Community! Als Dankeschön kannst du hier sofort dein exklusives Freebit-E-Book herunterladen.</p>
+    <a class="button" href="Freebit_Ebook.pdf" download>🎁 Jetzt E-Book herunterladen</a>
+  </div>
 </body>
 </html>
