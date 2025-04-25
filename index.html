@@ -2,8 +2,8 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Crossmedia7 | Digitaler Marketing-Boost</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dein kostenloser Marketing-Boost!</title>
   <style>
     body {
       margin: 0;
@@ -14,147 +14,147 @@
     }
 
     .container {
-      max-width: 600px;
-      margin: 60px auto;
-      background-color: rgba(0, 0, 0, 0.6); /* Schwarz transparent */
+      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 500px;
+      margin: 50px auto;
       padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
       text-align: center;
     }
 
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
+      margin-bottom: 15px;
       border: 2px solid white;
-      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 26px;
+      font-size: 24px;
       margin-bottom: 20px;
     }
 
-    .highlight {
+    .cta-banner {
       background-color: #f39c12;
       color: black;
       padding: 10px;
-      border-radius: 10px;
-      font-weight: bold;
       margin-bottom: 20px;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
-    form input {
+    input[type="text"],
+    input[type="email"] {
       width: 100%;
       padding: 12px;
       margin: 10px 0;
       border: none;
       border-radius: 5px;
-      background: rgba(255, 255, 255, 0.8); /* leicht transparent weiß */
-      color: black;
-      font-size: 16px;
     }
 
-    form input::placeholder {
-      color: #555;
-    }
-
-    .cta-button {
+    button {
+      width: 100%;
+      padding: 12px;
       background-color: #27ae60;
       color: white;
       border: none;
-      padding: 14px;
-      margin-top: 10px;
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
-      width: 100%;
+      margin-top: 10px;
     }
 
-    .section {
-      margin-top: 40px;
+    button:hover {
+      background-color: #219150;
     }
 
-    h2 {
-      font-size: 22px;
-      margin-bottom: 20px;
+    .testimonials {
+      margin-top: 30px;
     }
 
     .testimonial {
-      background-color: rgba(255, 255, 255, 0.2); /* leicht transparent weiß */
+      background-color: rgba(255,255,255,0.1);
       padding: 15px;
       border-radius: 10px;
-      margin-bottom: 20px;
       display: flex;
       align-items: center;
-      text-align: left;
+      margin-bottom: 15px;
     }
 
     .testimonial img {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
-      margin-right: 15px;
       object-fit: cover;
-      border: 1px solid white;
+      margin-right: 15px;
+      border: 2px solid white;
     }
 
-    .testimonial p {
-      margin: 0;
-      font-size: 15px;
-      color: #eee;
+    .testimonial-text {
+      font-size: 14px;
+      text-align: left;
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="container">
     <img src="avatar.jpg" alt="Avatar" class="avatar">
-
     <h1>Trag dich ein für deinen kostenlosen digitalen Marketing-Boost!</h1>
 
-    <div class="highlight">
+    <div class="cta-banner">
       Hol dir exklusiven Zugang zu Strategien & Tools – <strong>kostenlos!</strong>
     </div>
 
-    <form action="danke.html" method="POST">
+    <form>
       <input type="text" name="vorname" placeholder="Vorname" required>
       <input type="text" name="nachname" placeholder="Nachname" required>
       <input type="email" name="email" placeholder="E-Mail-Adresse" required>
-      <button type="submit" class="cta-button">Jetzt kostenlos anmelden</button>
+      <button type="submit">Jetzt kostenlos anmelden</button>
     </form>
 
-    <div class="section">
+    <div class="testimonials">
       <h2>Was andere sagen:</h2>
 
       <div class="testimonial">
         <img src="Anna.jpg" alt="Anna">
-        <p>„Dank Crossmedia7 habe ich endlich mein erstes digitales Produkt verkauft. Top Unterstützung!“</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Laura.jpg" alt="Laura">
-        <p>„Ich war überrascht, wie viel Mehrwert ich sofort kostenlos erhalten habe. Hammer!“</p>
+        <div class="testimonial-text">
+          „Dank Crossmedia7 habe ich endlich mein erstes digitales Produkt verkauft. Top Unterstützung!"
+        </div>
       </div>
 
       <div class="testimonial">
         <img src="Lukas.jpg" alt="Lukas">
-        <p>„Der Newsletter liefert extrem wertvolle Tipps, die mir sofort geholfen haben!“</p>
-      </div>
-
-      <div class="testimonial">
-        <img src="Markus.jpg" alt="Markus">
-        <p>„Mega Infos! Wer hier nicht zugreift, verpasst richtig was.“</p>
+        <div class="testimonial-text">
+          „Ich war überrascht, wie viel Mehrwert ich sofort kostenlos erhalten habe. Hammer!"
+        </div>
       </div>
 
       <div class="testimonial">
         <img src="Sophie.jpg" alt="Sophie">
-        <p>„Klare Empfehlung – sehr authentisch und ehrlich. Vielen Dank für diese Möglichkeiten!“</p>
+        <div class="testimonial-text">
+          „Klare Empfehlungen und direkte Umsetzungstipps – alles gratis. Wahnsinn!"
+        </div>
       </div>
+
+      <div class="testimonial">
+        <img src="Laura.jpg" alt="Laura">
+        <div class="testimonial-text">
+          „Crossmedia7 hat meine Erwartungen an kostenlose Inhalte weit übertroffen!"
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <img src="Markus.jpg" alt="Markus">
+        <div class="testimonial-text">
+          „Mit den Strategien konnte ich direkt Kunden gewinnen. Absolut empfehlenswert!"
+        </div>
+      </div>
+
     </div>
   </div>
-
 </body>
 </html>
