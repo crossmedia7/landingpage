@@ -2,41 +2,47 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dein kostenloser Marketing-Boost!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketing-Boost Landingpage</title>
   <style>
+    /* Hintergrund */
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
       background: url('Hintergrund.jpg') no-repeat center center fixed;
       background-size: cover;
+      font-family: Arial, sans-serif;
       color: white;
     }
 
+    /* Container */
     .container {
-      background-color: rgba(0, 0, 0, 0.7);
-      max-width: 500px;
+      background: rgba(0, 0, 0, 0.7);
+      max-width: 400px;
       margin: 50px auto;
       padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
       text-align: center;
     }
 
+    /* Avatar */
     .avatar {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 15px;
-      border: 2px solid white;
+      border: 3px solid white;
     }
 
+    /* Headline */
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 20px;
     }
 
+    /* Call to Action Banner */
     .cta-banner {
       background-color: #f39c12;
       color: black;
@@ -46,39 +52,46 @@
       font-weight: bold;
     }
 
-    input[type="text"],
-    input[type="email"] {
+    /* Formular */
+    form input[type="text"],
+    form input[type="email"],
+    form button {
       width: 100%;
       padding: 12px;
-      margin: 10px 0;
+      margin: 8px 0;
+      border-radius: 8px;
       border: none;
-      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
     }
 
-    button {
-      width: 100%;
-      padding: 12px;
+    form input[type="text"],
+    form input[type="email"] {
+      background: white;
+      color: black;
+    }
+
+    form button {
       background-color: #27ae60;
       color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
       cursor: pointer;
-      margin-top: 10px;
+      font-weight: bold;
     }
 
-    button:hover {
+    form button:hover {
       background-color: #219150;
     }
 
+    /* Testimonials */
     .testimonials {
       margin-top: 30px;
+      text-align: left;
     }
 
     .testimonial {
       background-color: rgba(255,255,255,0.1);
       padding: 15px;
-      border-radius: 10px;
+      border-radius: 12px;
       display: flex;
       align-items: center;
       margin-bottom: 15px;
@@ -95,7 +108,15 @@
 
     .testimonial-text {
       font-size: 14px;
-      text-align: left;
+      color: #f0f0f0;
+    }
+
+    /* Mobile Optimierung */
+    @media (max-width: 500px) {
+      .container {
+        width: 90%;
+        margin: 20px auto;
+      }
     }
   </style>
 </head>
@@ -117,7 +138,7 @@
     </form>
 
     <div class="testimonials">
-      <h2>Was andere sagen:</h2>
+      <h2 style="text-align:center;">Was andere sagen:</h2>
 
       <div class="testimonial">
         <img src="Anna.jpg" alt="Anna">
@@ -137,20 +158,6 @@
         <img src="Sophie.jpg" alt="Sophie">
         <div class="testimonial-text">
           „Klare Empfehlungen und direkte Umsetzungstipps – alles gratis. Wahnsinn!"
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="Laura.jpg" alt="Laura">
-        <div class="testimonial-text">
-          „Crossmedia7 hat meine Erwartungen an kostenlose Inhalte weit übertroffen!"
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <img src="Markus.jpg" alt="Markus">
-        <div class="testimonial-text">
-          „Mit den Strategien konnte ich direkt Kunden gewinnen. Absolut empfehlenswert!"
         </div>
       </div>
 
