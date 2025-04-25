@@ -1,169 +1,160 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crossmedia7 - Deine digitale Chance!</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('Hintergrund.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
-        .overlay {
-            background: rgba(0, 0, 0, 0.6);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #333;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            text-align: center;
-        }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            border: 3px solid #00bfff;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2.5em;
-            color: #00bfff;
-        }
-        p {
-            margin-bottom: 30px;
-            font-size: 1.2em;
-        }
-        form input[type="text"], form input[type="email"] {
-            padding: 15px;
-            width: 45%;
-            margin: 5px;
-            border: none;
-            border-radius: 10px;
-        }
-        form button {
-            padding: 15px 30px;
-            margin-top: 20px;
-            background-color: #00bfff;
-            border: none;
-            border-radius: 10px;
-            color: white;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        form button:hover {
-            background-color: #009acd;
-        }
-        .call-to-action {
-            margin-top: 30px;
-            background: #00bfff;
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: white;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        .recommendations {
-            margin-top: 50px;
-            background: #444;
-            padding: 30px;
-            border-radius: 15px;
-        }
-        .recommendation {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            background: #555;
-            padding: 15px;
-            border-radius: 10px;
-        }
-        .recommendation img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-right: 15px;
-            object-fit: cover;
-        }
-        .recommendation p {
-            text-align: left;
-            margin: 0;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.8em;
-            color: #aaa;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crossmedia7 – Digital durchstarten</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('Hintergrund.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .avatar {
+      width: 120px;
+      border-radius: 50%;
+      border: 3px solid #00bfff;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #00bfff;
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    form {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      margin-bottom: 40px;
+    }
+    input[type="text"], input[type="email"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #00bfff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #009acd;
+    }
+    .cta {
+      margin-top: 20px;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .testimonial {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: left;
+      color: #eee;
+    }
+    .testimonial img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+    @media (max-width: 768px) {
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="overlay">
-        <div class="container">
-            <img src="avatar.jpg" alt="Avatar" class="avatar">
-            <h1>Starte jetzt deine digitale Erfolgsreise!</h1>
-            <p>Trage dich kostenlos ein und erfahre, wie du sofort online durchstarten kannst.</p>
-            
-            <form action="danke.html" method="post">
-                <input type="text" name="vorname" placeholder="Vorname" required>
-                <input type="text" name="nachname" placeholder="Nachname" required>
-                <br>
-                <input type="email" name="email" placeholder="E-Mail-Adresse" required>
-                <br>
-                <button type="submit">Jetzt kostenlos starten!</button>
-            </form>
+  <div class="overlay">
+    <div class="container">
+      <img src="avatar.jpg" alt="Avatar" class="avatar" />
+      <h1>Starte dein digitales Business!</h1>
+      <h2>Hol dir jetzt dein kostenloses Starter-Freebie</h2>
 
-            <div class="call-to-action">
-                💥 Kostenlos anmelden und sofort Zugang sichern! 💥
-            </div>
+      <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')" class="embeddable-buttondown-form">
+        <input type="text" name="first_name" placeholder="Vorname" required />
+        <input type="text" name="last_name" placeholder="Nachname" required />
+        <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
+        <button type="submit">Jetzt kostenlos starten ➔</button>
+      </form>
 
-            <div class="recommendations">
-                <h2>Das sagen begeisterte Nutzer:</h2>
+      <div class="cta">
+        🎁 Bonus: Du bekommst direkt mein gratis E-Book – exklusiv für Abonnenten!
+      </div>
 
-                <div class="recommendation">
-                    <img src="Anna.jpg" alt="Anna L.">
-                    <p><strong>Anna L.:</strong> "Durch die Plattform habe ich endlich den richtigen Weg gefunden, meine Produkte zu vermarkten. Kostenlos und super effektiv!"</p>
-                </div>
-
-                <div class="recommendation">
-                    <img src="Markus.jpg" alt="Markus B.">
-                    <p><strong>Markus B.:</strong> "Nie hätte ich gedacht, dass ich online so schnell Erfolg sehe – danke für diese geniale Möglichkeit!"</p>
-                </div>
-
-                <div class="recommendation">
-                    <img src="Sophie.jpg" alt="Sophie M.">
-                    <p><strong>Sophie M.:</strong> "Einfache Umsetzung, starke Ergebnisse. Kostenlos loslegen und sofort Wirkung spüren!"</p>
-                </div>
-
-                <div class="recommendation">
-                    <img src="Lukas.jpg" alt="Lukas K.">
-                    <p><strong>Lukas K.:</strong> "Die beste Entscheidung meines Jahres! Genial, wie leicht alles aufgesetzt ist."</p>
-                </div>
-
-                <div class="recommendation">
-                    <img src="Laura.jpg" alt="Laura S.">
-                    <p><strong>Laura S.:</strong> "Endlich ein echter Gamechanger im Netz – kostenlos testen und sofort überzeugt sein."</p>
-                </div>
-
-            </div>
-
-            <footer>
-                © 2025 Crossmedia7. Alle Rechte vorbehalten.
-            </footer>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="person1.jpg" alt="Person 1" />
+          <strong>Lisa M.</strong><br />
+          „Ich war total überfordert – dank deinem Freebie hatte ich direkt Klarheit. Danke!“
         </div>
+        <div class="testimonial">
+          <img src="person2.jpg" alt="Person 2" />
+          <strong>Daniel K.</strong><br />
+          „Top Tipps, keine Zeitverschwendung – sondern richtig wertvoller Content.“
+        </div>
+        <div class="testimonial">
+          <img src="person3.jpg" alt="Person 3" />
+          <strong>Ayse T.</strong><br />
+          „Ich hab’s weiterempfohlen – weil’s wirklich geholfen hat. 10/10.“
+        </div>
+        <div class="testimonial">
+          <img src="person4.jpg" alt="Person 4" />
+          <strong>Marco B.</strong><br />
+          „Mehr gelernt in 10 Minuten als in vielen Kursen. Ehrlich.“  
+        </div>
+        <div class="testimonial">
+          <img src="person5.jpg" alt="Person 5" />
+          <strong>Sabrina H.</strong><br />
+          „Dieses Freebie war der Gamechanger für meinen Start. Unglaublich!“
+        </div>
+      </div>
+
+      <footer>
+        © 2025 Crossmedia7. Alle Rechte vorbehalten.
+      </footer>
     </div>
+  </div>
 </body>
 </html>
