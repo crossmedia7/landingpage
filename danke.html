@@ -6,23 +6,32 @@
   <title>Vielen Dank!</title>
   <style>
     body {
-      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      background: url('Hintergrund.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 50px;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .thankyou-box {
-      background: white;
+      background: rgba(0, 0, 0, 0.6);
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-      display: inline-block;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+      max-width: 500px;
     }
     h1 {
       color: #4CAF50;
+      margin-bottom: 20px;
     }
     p {
-      color: #555;
+      color: #ddd;
+      font-size: 18px;
     }
     .button {
       margin-top: 20px;
@@ -43,9 +52,9 @@
 
 <div class="thankyou-box">
   <h1>Vielen Dank!</h1>
-  <p>Dein Eintrag war erfolgreich.</p>
-  <p>Dein Gratis-E-Book kannst du hier herunterladen:</p>
-  <a class="button" href="DEIN_EBOOK_LINK.pdf" download>Jetzt E-Book herunterladen</a>
+  <p>Deine Anmeldung war erfolgreich!</p>
+  <p>Hier kannst du dein Gratis-E-Book herunterladen:</p>
+  <a class="button" href="DeinEbook.pdf" download>Jetzt E-Book herunterladen</a>
 </div>
 
 </body>
