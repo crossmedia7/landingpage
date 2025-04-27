@@ -1,157 +1,68 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Deine Landingpage</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('Hintergrund.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 40px;
-      border-radius: 12px;
-    }
-
-    .avatar {
-      display: block;
-      margin: 0 auto 20px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #fff;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 2rem;
-    }
-
-    p.description {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-    }
-
-    input[type="text"],
-    input[type="email"] {
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: none;
-      width: 100%;
-      max-width: 500px;
-      box-sizing: border-box;
-    }
-
-    button {
-      background-color: #ff4747;
-      color: white;
-      font-size: 1.1rem;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      width: 100%;
-      max-width: 500px;
-    }
-
-    button:hover {
-      background-color: #e63c3c;
-    }
-
-    .call-to-action {
-      margin-top: 15px;
-      text-align: center;
-      font-weight: bold;
-      color: #ffd700;
-      font-size: 1.1rem;
-    }
-
-    .testimonials {
-      margin-top: 40px;
-    }
-
-    .testimonial {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 20px;
-      background-color: rgba(255,255,255,0.05);
-      padding: 12px;
-      border-radius: 10px;
-    }
-
-    .testimonial img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #fff;
-    }
-
-    .testimonial p {
-      margin: 0;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crossmedia7 Memoris</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body>
-  <div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar" />
-    <h1>Trag dich ein & starte durch!</h1>
-    <p class="description">Kostenloses E-Book: Die Geheimformel für deinen digitalen Erfolg</p>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Crossmedia7 Memoris</h1>
+      <a href="#signup" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Jetzt kostenlos starten</a>
+    </div>
+  </header>
 
-    <form action="https://buttondown.email/api/emails/embed-subscribe/memorix" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/memorix', 'popupwindow')">
-      <input type="text" name="vorname" placeholder="Vorname" required />
-      <input type="text" name="nachname" placeholder="Nachname" required />
-      <input type="email" name="email" placeholder="E-Mail-Adresse" required />
-      <button type="submit">Jetzt kostenlos sichern</button>
+  <section class="text-center py-20 bg-gradient-to-r from-blue-100 to-blue-200">
+    <h2 class="text-4xl font-bold mb-4">Entfalte dein volles Potenzial</h2>
+    <p class="text-xl">#MindsetDaily #KeineAusreden #Unternehmergeist</p>
+    <p class="mt-4 max-w-2xl mx-auto">Crossmedia7 Memoris bringt Struktur, Motivation & Wachstum in deinen Alltag. Für alle, die mehr aus sich und ihrem Umfeld machen wollen.</p>
+  </section>
+
+  <section class="py-16 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">Was ist Crossmedia7 Memoris?</h3>
+    <ul class="space-y-4">
+      <li>Klassisch fundiertes Lernen mit modernen Medien</li>
+      <li>Inhalte auf Musik & Videos abgestimmt</li>
+      <li>Für Schüler, Eltern, Coaches & Unternehmer</li>
+      <li>Basierend auf der Claritas Memory Work</li>
+    </ul>
+  </section>
+
+  <section class="bg-white py-16 px-4">
+    <h3 class="text-3xl font-semibold text-center mb-6">Dein Mindset bestimmt dein Ergebnis</h3>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>Konzentration & Disziplin</div>
+      <div>Strategisches Denken</div>
+      <div>Langzeitgedächtnis & Klarheit</div>
+    </div>
+  </section>
+
+  <section class="bg-blue-50 py-16 px-4 text-center">
+    <h3 class="text-3xl font-semibold mb-4">Gratis: 7 Geheimformeln für deinen digitalen Erfolg!</h3>
+    <p class="mb-6">Erhalte jetzt die Übersicht über die wichtigsten Strategien für deinen Durchbruch im Online-Business.</p>
+    <form id="signup" class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Vorname" class="w-full px-4 py-2 rounded border border-gray-300">
+      <input type="email" placeholder="E-Mail-Adresse" class="w-full px-4 py-2 rounded border border-gray-300">
+      <button class="w-full bg-blue-600 text-white px-4 py-2 rounded">Jetzt Zugang sichern</button>
     </form>
+  </section>
 
-    <div class="call-to-action">
-      ➤ Starte jetzt – gratis, unverbindlich & voller Mehrwert!
-    </div>
+  <section class="py-16 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-6">Was andere sagen</h3>
+    <blockquote class="italic border-l-4 border-blue-600 pl-4 mb-4">„Meine Tochter liebt es – und ich wachse als Unternehmer täglich mit.“ – Sandra K.</blockquote>
+    <blockquote class="italic border-l-4 border-blue-600 pl-4">„Das ist viel mehr als Lernen – es ist ein Mindset-Shift!“ – Lars B.</blockquote>
+  </section>
 
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="Anna.jpg" alt="Anna" />
-        <p>„Wow! Selten so viel Klarheit in einem Freebie erlebt. Danke!“ – Anna M.</p>
-      </div>
-      <div class="testimonial">
-        <img src="Markus.jpg" alt="Markus" />
-        <p>„Sehr wertvoll – es bringt wirklich auf den Punkt, was wichtig ist.“ – Markus B.</p>
-      </div>
-      <div class="testimonial">
-        <img src="Sophie.jpg" alt="Sophie" />
-        <p>„Ich hab das E-Book verschlungen – super aufbereitet!“ – Sophie L.</p>
-      </div>
-      <div class="testimonial">
-        <img src="Lukas.jpg" alt="Lukas" />
-        <p>„Das hätte ich gern schon vor einem Jahr gehabt. Top Content!“ – Lukas K.</p>
-      </div>
-      <div class="testimonial">
-        <img src="Laura.jpg" alt="Laura" />
-        <p>„Klare Empfehlung – besonders für Einsteiger ein echter Schatz!“ – Laura W.</p>
-      </div>
-    </div>
-  </div>
+  <section class="text-center bg-blue-600 text-white py-16">
+    <h3 class="text-3xl font-bold mb-4">Starte jetzt deinen Weg mit Crossmedia7</h3>
+    <a href="#signup" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">Jetzt Mitglied werden</a>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>© 2025 Crossmedia7 Memoris. Alle Rechte vorbehalten.</p>
+    <p><a href="https://gptdeutsch.com" class="underline">gptdeutsch.com</a></p>
+  </footer>
 </body>
 </html>
